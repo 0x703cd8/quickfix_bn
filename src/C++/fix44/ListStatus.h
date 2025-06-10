@@ -19,50 +19,45 @@ namespace FIX44
     static FIX::MsgType MsgType() { return FIX::MsgType("N"); }
 
     ListStatus(
-      const FIX::ListID& aListID,
+      const FIX::Symbol& aSymbol,
       const FIX::ListStatusType& aListStatusType,
-      const FIX::NoRpts& aNoRpts,
-      const FIX::ListOrderStatus& aListOrderStatus,
-      const FIX::RptSeq& aRptSeq,
-      const FIX::TotNoOrders& aTotNoOrders )
+      const FIX::ListOrderStatus& aListOrderStatus )
     : Message(MsgType())
     {
-      set(aListID);
+      set(aSymbol);
       set(aListStatusType);
-      set(aNoRpts);
       set(aListOrderStatus);
-      set(aRptSeq);
-      set(aTotNoOrders);
     }
 
+    FIELD_SET(*this, FIX::Symbol);
     FIELD_SET(*this, FIX::ListID);
+    FIELD_SET(*this, FIX::ClListID);
+    FIELD_SET(*this, FIX::OrigClListID);
+    FIELD_SET(*this, FIX::ContingencyType);
     FIELD_SET(*this, FIX::ListStatusType);
-    FIELD_SET(*this, FIX::NoRpts);
     FIELD_SET(*this, FIX::ListOrderStatus);
-    FIELD_SET(*this, FIX::RptSeq);
-    FIELD_SET(*this, FIX::ListStatusText);
-    FIELD_SET(*this, FIX::EncodedListStatusTextLen);
-    FIELD_SET(*this, FIX::EncodedListStatusText);
+    FIELD_SET(*this, FIX::ListRejectReason);
     FIELD_SET(*this, FIX::TransactTime);
-    FIELD_SET(*this, FIX::TotNoOrders);
-    FIELD_SET(*this, FIX::LastFragment);
     FIELD_SET(*this, FIX::NoOrders);
     class NoOrders: public FIX::Group
     {
     public:
-    NoOrders() : FIX::Group(73,11,FIX::message_order(11,526,14,39,636,151,84,6,103,58,354,355,0)) {}
+    NoOrders() : FIX::Group(73,11,FIX::message_order(11,55,37,25010,103,25016,58,0)) {}
       FIELD_SET(*this, FIX::ClOrdID);
-      FIELD_SET(*this, FIX::SecondaryClOrdID);
-      FIELD_SET(*this, FIX::CumQty);
-      FIELD_SET(*this, FIX::OrdStatus);
-      FIELD_SET(*this, FIX::WorkingIndicator);
-      FIELD_SET(*this, FIX::LeavesQty);
-      FIELD_SET(*this, FIX::CxlQty);
-      FIELD_SET(*this, FIX::AvgPx);
+      FIELD_SET(*this, FIX::Symbol);
+      FIELD_SET(*this, FIX::OrderID);
+      FIELD_SET(*this, FIX::NoListTriggeringInstructions);
+      class NoListTriggeringInstructions: public FIX::Group
+      {
+      public:
+      NoListTriggeringInstructions() : FIX::Group(25010,25011,FIX::message_order(25011,25012,25013,0)) {}
+        FIELD_SET(*this, FIX::ListTriggerType);
+        FIELD_SET(*this, FIX::ListTriggerTriggerIndex);
+        FIELD_SET(*this, FIX::ListTriggerAction);
+      };
       FIELD_SET(*this, FIX::OrdRejReason);
+      FIELD_SET(*this, FIX::ErrorCode);
       FIELD_SET(*this, FIX::Text);
-      FIELD_SET(*this, FIX::EncodedTextLen);
-      FIELD_SET(*this, FIX::EncodedText);
     };
   };
 

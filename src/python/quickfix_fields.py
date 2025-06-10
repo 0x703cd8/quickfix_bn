@@ -4774,6 +4774,447 @@ class SideComplianceID(quickfix.StringField):
 		else:
 			quickfix.StringField.__init__(self, 659, data)
 
+class InstrumentReqID(quickfix.StringField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.StringField.__init__(self, 320)
+		else:
+			quickfix.StringField.__init__(self, 320, data)
+
+class InstrumentListRequestType(quickfix.IntField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.IntField.__init__(self, 559)
+		else:
+			quickfix.IntField.__init__(self, 559, data)
+
+class LastFragment(quickfix.BoolField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.BoolField.__init__(self, 893)
+		else:
+			quickfix.BoolField.__init__(self, 893, data)
+
+class MinPriceIncrement(quickfix.DoubleField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.DoubleField.__init__(self, 969)
+		else:
+			quickfix.DoubleField.__init__(self, 969, data)
+
+class TradeID(quickfix.StringField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.StringField.__init__(self, 1003)
+		else:
+			quickfix.StringField.__init__(self, 1003, data)
+
+class MaxTradeVol(quickfix.DoubleField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.DoubleField.__init__(self, 1140)
+		else:
+			quickfix.DoubleField.__init__(self, 1140, data)
+
+class AggressorSide(quickfix.CharField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.CharField.__init__(self, 2446)
+		else:
+			quickfix.CharField.__init__(self, 2446, data)
+
+class ReqID(quickfix.StringField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.StringField.__init__(self, 6136)
+		else:
+			quickfix.StringField.__init__(self, 6136, data)
+
+class RecvWindow(quickfix.IntField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.IntField.__init__(self, 25000)
+		else:
+			quickfix.IntField.__init__(self, 25000, data)
+
+class NoLimitIndicators(quickfix.IntField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.IntField.__init__(self, 25003)
+		else:
+			quickfix.IntField.__init__(self, 25003, data)
+
+class LimitType(quickfix.CharField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.CharField.__init__(self, 25004)
+		else:
+			quickfix.CharField.__init__(self, 25004, data)
+
+class LimitCount(quickfix.IntField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.IntField.__init__(self, 25005)
+		else:
+			quickfix.IntField.__init__(self, 25005, data)
+
+class LimitMax(quickfix.IntField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.IntField.__init__(self, 25006)
+		else:
+			quickfix.IntField.__init__(self, 25006, data)
+
+class LimitResetInterval(quickfix.IntField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.IntField.__init__(self, 25007)
+		else:
+			quickfix.IntField.__init__(self, 25007, data)
+
+class LimitResetIntervalResolution(quickfix.CharField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.CharField.__init__(self, 25008)
+		else:
+			quickfix.CharField.__init__(self, 25008, data)
+
+class ErrorCode(quickfix.IntField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.IntField.__init__(self, 25016)
+		else:
+			quickfix.IntField.__init__(self, 25016, data)
+
+class MessageHandling(quickfix.IntField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.IntField.__init__(self, 25035)
+		else:
+			quickfix.IntField.__init__(self, 25035, data)
+
+class UUID(quickfix.StringField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.StringField.__init__(self, 25037)
+		else:
+			quickfix.StringField.__init__(self, 25037, data)
+
+class MinQtyIncrement(quickfix.DoubleField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.DoubleField.__init__(self, 25039)
+		else:
+			quickfix.DoubleField.__init__(self, 25039, data)
+
+class MarketMinTradeVol(quickfix.DoubleField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.DoubleField.__init__(self, 25040)
+		else:
+			quickfix.DoubleField.__init__(self, 25040, data)
+
+class MarketMaxTradeVol(quickfix.DoubleField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.DoubleField.__init__(self, 25041)
+		else:
+			quickfix.DoubleField.__init__(self, 25041, data)
+
+class MarketMinQtyIncrement(quickfix.DoubleField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.DoubleField.__init__(self, 25042)
+		else:
+			quickfix.DoubleField.__init__(self, 25042, data)
+
+class FirstBookUpdateID(quickfix.IntField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.IntField.__init__(self, 25043)
+		else:
+			quickfix.IntField.__init__(self, 25043, data)
+
+class LastBookUpdateID(quickfix.IntField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.IntField.__init__(self, 25044)
+		else:
+			quickfix.IntField.__init__(self, 25044, data)
+
+class PriceDelta(quickfix.DoubleField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.DoubleField.__init__(self, 811)
+		else:
+			quickfix.DoubleField.__init__(self, 811, data)
+
+class TargetStrategy(quickfix.IntField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.IntField.__init__(self, 847)
+		else:
+			quickfix.IntField.__init__(self, 847, data)
+
+class AggressorIndicator(quickfix.BoolField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.BoolField.__init__(self, 1057)
+		else:
+			quickfix.BoolField.__init__(self, 1057, data)
+
+class TriggerType(quickfix.CharField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.CharField.__init__(self, 1100)
+		else:
+			quickfix.CharField.__init__(self, 1100, data)
+
+class TriggerAction(quickfix.CharField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.CharField.__init__(self, 1101)
+		else:
+			quickfix.CharField.__init__(self, 1101, data)
+
+class TriggerPrice(quickfix.DoubleField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.DoubleField.__init__(self, 1102)
+		else:
+			quickfix.DoubleField.__init__(self, 1102, data)
+
+class TriggerPriceType(quickfix.CharField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.CharField.__init__(self, 1107)
+		else:
+			quickfix.CharField.__init__(self, 1107, data)
+
+class TriggerPriceDirection(quickfix.CharField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.CharField.__init__(self, 1109)
+		else:
+			quickfix.CharField.__init__(self, 1109, data)
+
+class ContingencyType(quickfix.IntField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.IntField.__init__(self, 1385)
+		else:
+			quickfix.IntField.__init__(self, 1385, data)
+
+class ListRejectReason(quickfix.IntField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.IntField.__init__(self, 1386)
+		else:
+			quickfix.IntField.__init__(self, 1386, data)
+
+class StrategyID(quickfix.IntField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.IntField.__init__(self, 7940)
+		else:
+			quickfix.IntField.__init__(self, 7940, data)
+
+class DropCopyFlag(quickfix.BoolField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.BoolField.__init__(self, 9406)
+		else:
+			quickfix.BoolField.__init__(self, 9406, data)
+
+class SelfTradePreventionMode(quickfix.CharField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.CharField.__init__(self, 25001)
+		else:
+			quickfix.CharField.__init__(self, 25001, data)
+
+class CancelRestrictions(quickfix.IntField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.IntField.__init__(self, 25002)
+		else:
+			quickfix.IntField.__init__(self, 25002, data)
+
+class TriggerTrailingDeltaBips(quickfix.IntField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.IntField.__init__(self, 25009)
+		else:
+			quickfix.IntField.__init__(self, 25009, data)
+
+class NoListTriggeringInstructions(quickfix.IntField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.IntField.__init__(self, 25010)
+		else:
+			quickfix.IntField.__init__(self, 25010, data)
+
+class ListTriggerType(quickfix.CharField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.CharField.__init__(self, 25011)
+		else:
+			quickfix.CharField.__init__(self, 25011, data)
+
+class ListTriggerTriggerIndex(quickfix.IntField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.IntField.__init__(self, 25012)
+		else:
+			quickfix.IntField.__init__(self, 25012, data)
+
+class ListTriggerAction(quickfix.CharField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.CharField.__init__(self, 25013)
+		else:
+			quickfix.CharField.__init__(self, 25013, data)
+
+class ClListID(quickfix.StringField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.StringField.__init__(self, 25014)
+		else:
+			quickfix.StringField.__init__(self, 25014, data)
+
+class OrigClListID(quickfix.StringField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.StringField.__init__(self, 25015)
+		else:
+			quickfix.StringField.__init__(self, 25015, data)
+
+class CumQuoteQty(quickfix.DoubleField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.DoubleField.__init__(self, 25017)
+		else:
+			quickfix.DoubleField.__init__(self, 25017, data)
+
+class OrderCreationTime(quickfix.UtcTimeStampField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.UtcTimeStampField.__init__(self, 25018)
+		else:
+			quickfix.UtcTimeStampField.__init__(self, 25018, data)
+
+class WorkingFloor(quickfix.IntField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.IntField.__init__(self, 25021)
+		else:
+			quickfix.IntField.__init__(self, 25021, data)
+
+class TrailingTime(quickfix.UtcTimeStampField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.UtcTimeStampField.__init__(self, 25022)
+		else:
+			quickfix.UtcTimeStampField.__init__(self, 25022, data)
+
+class WorkingTime(quickfix.UtcTimeStampField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.UtcTimeStampField.__init__(self, 25023)
+		else:
+			quickfix.UtcTimeStampField.__init__(self, 25023, data)
+
+class PreventedMatchID(quickfix.IntField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.IntField.__init__(self, 25024)
+		else:
+			quickfix.IntField.__init__(self, 25024, data)
+
+class PreventedExecutionPrice(quickfix.DoubleField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.DoubleField.__init__(self, 25025)
+		else:
+			quickfix.DoubleField.__init__(self, 25025, data)
+
+class PreventedExecutionQty(quickfix.DoubleField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.DoubleField.__init__(self, 25026)
+		else:
+			quickfix.DoubleField.__init__(self, 25026, data)
+
+class TradeGroupID(quickfix.IntField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.IntField.__init__(self, 25027)
+		else:
+			quickfix.IntField.__init__(self, 25027, data)
+
+class CounterSymbol(quickfix.StringField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.StringField.__init__(self, 25028)
+		else:
+			quickfix.StringField.__init__(self, 25028, data)
+
+class CounterOrderID(quickfix.IntField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.IntField.__init__(self, 25029)
+		else:
+			quickfix.IntField.__init__(self, 25029, data)
+
+class PreventedQty(quickfix.DoubleField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.DoubleField.__init__(self, 25030)
+		else:
+			quickfix.DoubleField.__init__(self, 25030, data)
+
+class LastPreventedQty(quickfix.DoubleField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.DoubleField.__init__(self, 25031)
+		else:
+			quickfix.DoubleField.__init__(self, 25031, data)
+
+class SOR(quickfix.BoolField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.BoolField.__init__(self, 25032)
+		else:
+			quickfix.BoolField.__init__(self, 25032, data)
+
+class OrderCancelRequestAndNewOrderSingleMode(quickfix.IntField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.IntField.__init__(self, 25033)
+		else:
+			quickfix.IntField.__init__(self, 25033, data)
+
+class CancelClOrdID(quickfix.StringField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.StringField.__init__(self, 25034)
+		else:
+			quickfix.StringField.__init__(self, 25034, data)
+
+class ResponseMode(quickfix.IntField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.IntField.__init__(self, 25036)
+		else:
+			quickfix.IntField.__init__(self, 25036, data)
+
+class OrderRateLimitExceededMode(quickfix.IntField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.IntField.__init__(self, 25038)
+		else:
+			quickfix.IntField.__init__(self, 25038, data)
+
 class IOIID(quickfix.StringField):
 	def __init__(self, data = None):
 		if data == None:
@@ -5074,6 +5515,13 @@ class LegOfferPx(quickfix.DoubleField):
 			quickfix.DoubleField.__init__(self, 684)
 		else:
 			quickfix.DoubleField.__init__(self, 684, data)
+
+class LegOrderQty(quickfix.DoubleField):
+	def __init__(self, data = None):
+		if data == None:
+			quickfix.DoubleField.__init__(self, 685)
+		else:
+			quickfix.DoubleField.__init__(self, 685, data)
 
 class LegPriceType(quickfix.IntField):
 	def __init__(self, data = None):
@@ -5936,13 +6384,6 @@ class UnderlyingPx(quickfix.DoubleField):
 		else:
 			quickfix.DoubleField.__init__(self, 810, data)
 
-class PriceDelta(quickfix.DoubleField):
-	def __init__(self, data = None):
-		if data == None:
-			quickfix.DoubleField.__init__(self, 811)
-		else:
-			quickfix.DoubleField.__init__(self, 811, data)
-
 class ApplQueueMax(quickfix.IntField):
 	def __init__(self, data = None):
 		if data == None:
@@ -6180,13 +6621,6 @@ class DiscretionScope(quickfix.IntField):
 			quickfix.IntField.__init__(self, 846)
 		else:
 			quickfix.IntField.__init__(self, 846, data)
-
-class TargetStrategy(quickfix.IntField):
-	def __init__(self, data = None):
-		if data == None:
-			quickfix.IntField.__init__(self, 847)
-		else:
-			quickfix.IntField.__init__(self, 847, data)
 
 class TargetStrategyParameters(quickfix.StringField):
 	def __init__(self, data = None):
@@ -6502,13 +6936,6 @@ class TotNoAllocs(quickfix.IntField):
 			quickfix.IntField.__init__(self, 892)
 		else:
 			quickfix.IntField.__init__(self, 892, data)
-
-class LastFragment(quickfix.BoolField):
-	def __init__(self, data = None):
-		if data == None:
-			quickfix.BoolField.__init__(self, 893)
-		else:
-			quickfix.BoolField.__init__(self, 893, data)
 
 class CollReqID(quickfix.StringField):
 	def __init__(self, data = None):
@@ -6944,13 +7371,6 @@ class LegInterestAccrualDate(quickfix.StringField):
 		else:
 			quickfix.StringField.__init__(self, 956, data)
 
-class LegOrderQty(quickfix.DoubleField):
-	def __init__(self, data = None):
-		if data == None:
-			quickfix.DoubleField.__init__(self, 685)
-		else:
-			quickfix.DoubleField.__init__(self, 685, data)
-
 class NoStrategyParameters(quickfix.IntField):
 	def __init__(self, data = None):
 		if data == None:
@@ -7034,13 +7454,6 @@ class StrikeValue(quickfix.DoubleField):
 			quickfix.DoubleField.__init__(self, 968)
 		else:
 			quickfix.DoubleField.__init__(self, 968, data)
-
-class MinPriceIncrement(quickfix.DoubleField):
-	def __init__(self, data = None):
-		if data == None:
-			quickfix.DoubleField.__init__(self, 969)
-		else:
-			quickfix.DoubleField.__init__(self, 969, data)
 
 class PositionLimit(quickfix.IntField):
 	def __init__(self, data = None):
@@ -7265,13 +7678,6 @@ class AllocMethod(quickfix.IntField):
 			quickfix.IntField.__init__(self, 1002)
 		else:
 			quickfix.IntField.__init__(self, 1002, data)
-
-class TradeID(quickfix.StringField):
-	def __init__(self, data = None):
-		if data == None:
-			quickfix.StringField.__init__(self, 1003)
-		else:
-			quickfix.StringField.__init__(self, 1003, data)
 
 class SideTradeReportID(quickfix.StringField):
 	def __init__(self, data = None):
@@ -7630,13 +8036,6 @@ class CalculatedCcyLastQty(quickfix.DoubleField):
 		else:
 			quickfix.DoubleField.__init__(self, 1056, data)
 
-class AggressorIndicator(quickfix.BoolField):
-	def __init__(self, data = None):
-		if data == None:
-			quickfix.BoolField.__init__(self, 1057)
-		else:
-			quickfix.BoolField.__init__(self, 1057, data)
-
 class NoUndlyInstrumentParties(quickfix.IntField):
 	def __init__(self, data = None):
 		if data == None:
@@ -7910,27 +8309,6 @@ class PegSecurityDesc(quickfix.StringField):
 		else:
 			quickfix.StringField.__init__(self, 1099, data)
 
-class TriggerType(quickfix.CharField):
-	def __init__(self, data = None):
-		if data == None:
-			quickfix.CharField.__init__(self, 1100)
-		else:
-			quickfix.CharField.__init__(self, 1100, data)
-
-class TriggerAction(quickfix.CharField):
-	def __init__(self, data = None):
-		if data == None:
-			quickfix.CharField.__init__(self, 1101)
-		else:
-			quickfix.CharField.__init__(self, 1101, data)
-
-class TriggerPrice(quickfix.DoubleField):
-	def __init__(self, data = None):
-		if data == None:
-			quickfix.DoubleField.__init__(self, 1102)
-		else:
-			quickfix.DoubleField.__init__(self, 1102, data)
-
 class TriggerSymbol(quickfix.StringField):
 	def __init__(self, data = None):
 		if data == None:
@@ -7959,26 +8337,12 @@ class TriggerSecurityDesc(quickfix.StringField):
 		else:
 			quickfix.StringField.__init__(self, 1106, data)
 
-class TriggerPriceType(quickfix.CharField):
-	def __init__(self, data = None):
-		if data == None:
-			quickfix.CharField.__init__(self, 1107)
-		else:
-			quickfix.CharField.__init__(self, 1107, data)
-
 class TriggerPriceTypeScope(quickfix.CharField):
 	def __init__(self, data = None):
 		if data == None:
 			quickfix.CharField.__init__(self, 1108)
 		else:
 			quickfix.CharField.__init__(self, 1108, data)
-
-class TriggerPriceDirection(quickfix.CharField):
-	def __init__(self, data = None):
-		if data == None:
-			quickfix.CharField.__init__(self, 1109)
-		else:
-			quickfix.CharField.__init__(self, 1109, data)
 
 class TriggerNewPrice(quickfix.DoubleField):
 	def __init__(self, data = None):
@@ -8196,13 +8560,6 @@ class LegMaturityTime(quickfix.StringField):
 			quickfix.StringField.__init__(self, 1212)
 		else:
 			quickfix.StringField.__init__(self, 1212, data)
-
-class MaxTradeVol(quickfix.DoubleField):
-	def __init__(self, data = None):
-		if data == None:
-			quickfix.DoubleField.__init__(self, 1140)
-		else:
-			quickfix.DoubleField.__init__(self, 1140, data)
 
 class NoMDFeedTypes(quickfix.IntField):
 	def __init__(self, data = None):
@@ -9897,20 +10254,6 @@ class LegExecInst(quickfix.StringField):
 			quickfix.StringField.__init__(self, 1384)
 		else:
 			quickfix.StringField.__init__(self, 1384, data)
-
-class ContingencyType(quickfix.IntField):
-	def __init__(self, data = None):
-		if data == None:
-			quickfix.IntField.__init__(self, 1385)
-		else:
-			quickfix.IntField.__init__(self, 1385, data)
-
-class ListRejectReason(quickfix.IntField):
-	def __init__(self, data = None):
-		if data == None:
-			quickfix.IntField.__init__(self, 1386)
-		else:
-			quickfix.IntField.__init__(self, 1386, data)
 
 class NoTrdRepIndicators(quickfix.IntField):
 	def __init__(self, data = None):
@@ -32661,13 +33004,6 @@ class AggressorTime(quickfix.UtcTimeStampField):
 			quickfix.UtcTimeStampField.__init__(self, 2445)
 		else:
 			quickfix.UtcTimeStampField.__init__(self, 2445, data)
-
-class AggressorSide(quickfix.CharField):
-	def __init__(self, data = None):
-		if data == None:
-			quickfix.CharField.__init__(self, 2446)
-		else:
-			quickfix.CharField.__init__(self, 2446, data)
 
 class FastMarketIndicator(quickfix.BoolField):
 	def __init__(self, data = None):

@@ -19,8 +19,6 @@ namespace FIX44
     static FIX::MsgType MsgType() { return FIX::MsgType("5"); }
 
     FIELD_SET(*this, FIX::Text);
-    FIELD_SET(*this, FIX::EncodedTextLen);
-    FIELD_SET(*this, FIX::EncodedText);
   };
 
 }

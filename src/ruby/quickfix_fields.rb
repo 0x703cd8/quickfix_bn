@@ -8865,6 +8865,825 @@ module Quickfix
 		end
 	end
 
+	class InstrumentReqID < Quickfix::StringField
+		def InstrumentReqID.field
+			return 320
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(320)
+			else
+				super(320, data)
+			end
+		end
+	end
+
+	class InstrumentListRequestType < Quickfix::IntField
+		def InstrumentListRequestType.field
+			return 559
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(559)
+			else
+				super(559, data)
+			end
+		end
+	end
+
+	class LastFragment < Quickfix::BoolField
+		def LastFragment.field
+			return 893
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(893)
+			else
+				super(893, data)
+			end
+		end
+	end
+
+	class MinPriceIncrement < Quickfix::DoubleField
+		def MinPriceIncrement.field
+			return 969
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(969)
+			else
+				super(969, data)
+			end
+		end
+	end
+
+	class TradeID < Quickfix::StringField
+		def TradeID.field
+			return 1003
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(1003)
+			else
+				super(1003, data)
+			end
+		end
+	end
+
+	class MaxTradeVol < Quickfix::DoubleField
+		def MaxTradeVol.field
+			return 1140
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(1140)
+			else
+				super(1140, data)
+			end
+		end
+	end
+
+	class AggressorSide < Quickfix::CharField
+		def AggressorSide.field
+			return 2446
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(2446)
+			else
+				super(2446, data)
+			end
+		end
+	end
+
+	class ReqID < Quickfix::StringField
+		def ReqID.field
+			return 6136
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(6136)
+			else
+				super(6136, data)
+			end
+		end
+	end
+
+	class RecvWindow < Quickfix::IntField
+		def RecvWindow.field
+			return 25000
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25000)
+			else
+				super(25000, data)
+			end
+		end
+	end
+
+	class NoLimitIndicators < Quickfix::IntField
+		def NoLimitIndicators.field
+			return 25003
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25003)
+			else
+				super(25003, data)
+			end
+		end
+	end
+
+	class LimitType < Quickfix::CharField
+		def LimitType.field
+			return 25004
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25004)
+			else
+				super(25004, data)
+			end
+		end
+	end
+
+	class LimitCount < Quickfix::IntField
+		def LimitCount.field
+			return 25005
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25005)
+			else
+				super(25005, data)
+			end
+		end
+	end
+
+	class LimitMax < Quickfix::IntField
+		def LimitMax.field
+			return 25006
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25006)
+			else
+				super(25006, data)
+			end
+		end
+	end
+
+	class LimitResetInterval < Quickfix::IntField
+		def LimitResetInterval.field
+			return 25007
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25007)
+			else
+				super(25007, data)
+			end
+		end
+	end
+
+	class LimitResetIntervalResolution < Quickfix::CharField
+		def LimitResetIntervalResolution.field
+			return 25008
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25008)
+			else
+				super(25008, data)
+			end
+		end
+	end
+
+	class ErrorCode < Quickfix::IntField
+		def ErrorCode.field
+			return 25016
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25016)
+			else
+				super(25016, data)
+			end
+		end
+	end
+
+	class MessageHandling < Quickfix::IntField
+		def MessageHandling.field
+			return 25035
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25035)
+			else
+				super(25035, data)
+			end
+		end
+	end
+
+	class UUID < Quickfix::StringField
+		def UUID.field
+			return 25037
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25037)
+			else
+				super(25037, data)
+			end
+		end
+	end
+
+	class MinQtyIncrement < Quickfix::DoubleField
+		def MinQtyIncrement.field
+			return 25039
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25039)
+			else
+				super(25039, data)
+			end
+		end
+	end
+
+	class MarketMinTradeVol < Quickfix::DoubleField
+		def MarketMinTradeVol.field
+			return 25040
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25040)
+			else
+				super(25040, data)
+			end
+		end
+	end
+
+	class MarketMaxTradeVol < Quickfix::DoubleField
+		def MarketMaxTradeVol.field
+			return 25041
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25041)
+			else
+				super(25041, data)
+			end
+		end
+	end
+
+	class MarketMinQtyIncrement < Quickfix::DoubleField
+		def MarketMinQtyIncrement.field
+			return 25042
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25042)
+			else
+				super(25042, data)
+			end
+		end
+	end
+
+	class FirstBookUpdateID < Quickfix::IntField
+		def FirstBookUpdateID.field
+			return 25043
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25043)
+			else
+				super(25043, data)
+			end
+		end
+	end
+
+	class LastBookUpdateID < Quickfix::IntField
+		def LastBookUpdateID.field
+			return 25044
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25044)
+			else
+				super(25044, data)
+			end
+		end
+	end
+
+	class PriceDelta < Quickfix::DoubleField
+		def PriceDelta.field
+			return 811
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(811)
+			else
+				super(811, data)
+			end
+		end
+	end
+
+	class TargetStrategy < Quickfix::IntField
+		def TargetStrategy.field
+			return 847
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(847)
+			else
+				super(847, data)
+			end
+		end
+	end
+
+	class AggressorIndicator < Quickfix::BoolField
+		def AggressorIndicator.field
+			return 1057
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(1057)
+			else
+				super(1057, data)
+			end
+		end
+	end
+
+	class TriggerType < Quickfix::CharField
+		def TriggerType.field
+			return 1100
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(1100)
+			else
+				super(1100, data)
+			end
+		end
+	end
+
+	class TriggerAction < Quickfix::CharField
+		def TriggerAction.field
+			return 1101
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(1101)
+			else
+				super(1101, data)
+			end
+		end
+	end
+
+	class TriggerPrice < Quickfix::DoubleField
+		def TriggerPrice.field
+			return 1102
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(1102)
+			else
+				super(1102, data)
+			end
+		end
+	end
+
+	class TriggerPriceType < Quickfix::CharField
+		def TriggerPriceType.field
+			return 1107
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(1107)
+			else
+				super(1107, data)
+			end
+		end
+	end
+
+	class TriggerPriceDirection < Quickfix::CharField
+		def TriggerPriceDirection.field
+			return 1109
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(1109)
+			else
+				super(1109, data)
+			end
+		end
+	end
+
+	class ContingencyType < Quickfix::IntField
+		def ContingencyType.field
+			return 1385
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(1385)
+			else
+				super(1385, data)
+			end
+		end
+	end
+
+	class ListRejectReason < Quickfix::IntField
+		def ListRejectReason.field
+			return 1386
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(1386)
+			else
+				super(1386, data)
+			end
+		end
+	end
+
+	class StrategyID < Quickfix::IntField
+		def StrategyID.field
+			return 7940
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(7940)
+			else
+				super(7940, data)
+			end
+		end
+	end
+
+	class DropCopyFlag < Quickfix::BoolField
+		def DropCopyFlag.field
+			return 9406
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(9406)
+			else
+				super(9406, data)
+			end
+		end
+	end
+
+	class SelfTradePreventionMode < Quickfix::CharField
+		def SelfTradePreventionMode.field
+			return 25001
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25001)
+			else
+				super(25001, data)
+			end
+		end
+	end
+
+	class CancelRestrictions < Quickfix::IntField
+		def CancelRestrictions.field
+			return 25002
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25002)
+			else
+				super(25002, data)
+			end
+		end
+	end
+
+	class TriggerTrailingDeltaBips < Quickfix::IntField
+		def TriggerTrailingDeltaBips.field
+			return 25009
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25009)
+			else
+				super(25009, data)
+			end
+		end
+	end
+
+	class NoListTriggeringInstructions < Quickfix::IntField
+		def NoListTriggeringInstructions.field
+			return 25010
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25010)
+			else
+				super(25010, data)
+			end
+		end
+	end
+
+	class ListTriggerType < Quickfix::CharField
+		def ListTriggerType.field
+			return 25011
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25011)
+			else
+				super(25011, data)
+			end
+		end
+	end
+
+	class ListTriggerTriggerIndex < Quickfix::IntField
+		def ListTriggerTriggerIndex.field
+			return 25012
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25012)
+			else
+				super(25012, data)
+			end
+		end
+	end
+
+	class ListTriggerAction < Quickfix::CharField
+		def ListTriggerAction.field
+			return 25013
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25013)
+			else
+				super(25013, data)
+			end
+		end
+	end
+
+	class ClListID < Quickfix::StringField
+		def ClListID.field
+			return 25014
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25014)
+			else
+				super(25014, data)
+			end
+		end
+	end
+
+	class OrigClListID < Quickfix::StringField
+		def OrigClListID.field
+			return 25015
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25015)
+			else
+				super(25015, data)
+			end
+		end
+	end
+
+	class CumQuoteQty < Quickfix::DoubleField
+		def CumQuoteQty.field
+			return 25017
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25017)
+			else
+				super(25017, data)
+			end
+		end
+	end
+
+	class OrderCreationTime < Quickfix::UtcTimeStampField
+		def OrderCreationTime.field
+			return 25018
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25018)
+			else
+				super(25018, data)
+			end
+		end
+	end
+
+	class WorkingFloor < Quickfix::IntField
+		def WorkingFloor.field
+			return 25021
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25021)
+			else
+				super(25021, data)
+			end
+		end
+	end
+
+	class TrailingTime < Quickfix::UtcTimeStampField
+		def TrailingTime.field
+			return 25022
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25022)
+			else
+				super(25022, data)
+			end
+		end
+	end
+
+	class WorkingTime < Quickfix::UtcTimeStampField
+		def WorkingTime.field
+			return 25023
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25023)
+			else
+				super(25023, data)
+			end
+		end
+	end
+
+	class PreventedMatchID < Quickfix::IntField
+		def PreventedMatchID.field
+			return 25024
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25024)
+			else
+				super(25024, data)
+			end
+		end
+	end
+
+	class PreventedExecutionPrice < Quickfix::DoubleField
+		def PreventedExecutionPrice.field
+			return 25025
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25025)
+			else
+				super(25025, data)
+			end
+		end
+	end
+
+	class PreventedExecutionQty < Quickfix::DoubleField
+		def PreventedExecutionQty.field
+			return 25026
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25026)
+			else
+				super(25026, data)
+			end
+		end
+	end
+
+	class TradeGroupID < Quickfix::IntField
+		def TradeGroupID.field
+			return 25027
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25027)
+			else
+				super(25027, data)
+			end
+		end
+	end
+
+	class CounterSymbol < Quickfix::StringField
+		def CounterSymbol.field
+			return 25028
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25028)
+			else
+				super(25028, data)
+			end
+		end
+	end
+
+	class CounterOrderID < Quickfix::IntField
+		def CounterOrderID.field
+			return 25029
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25029)
+			else
+				super(25029, data)
+			end
+		end
+	end
+
+	class PreventedQty < Quickfix::DoubleField
+		def PreventedQty.field
+			return 25030
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25030)
+			else
+				super(25030, data)
+			end
+		end
+	end
+
+	class LastPreventedQty < Quickfix::DoubleField
+		def LastPreventedQty.field
+			return 25031
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25031)
+			else
+				super(25031, data)
+			end
+		end
+	end
+
+	class SOR < Quickfix::BoolField
+		def SOR.field
+			return 25032
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25032)
+			else
+				super(25032, data)
+			end
+		end
+	end
+
+	class OrderCancelRequestAndNewOrderSingleMode < Quickfix::IntField
+		def OrderCancelRequestAndNewOrderSingleMode.field
+			return 25033
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25033)
+			else
+				super(25033, data)
+			end
+		end
+	end
+
+	class CancelClOrdID < Quickfix::StringField
+		def CancelClOrdID.field
+			return 25034
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25034)
+			else
+				super(25034, data)
+			end
+		end
+	end
+
+	class ResponseMode < Quickfix::IntField
+		def ResponseMode.field
+			return 25036
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25036)
+			else
+				super(25036, data)
+			end
+		end
+	end
+
+	class OrderRateLimitExceededMode < Quickfix::IntField
+		def OrderRateLimitExceededMode.field
+			return 25038
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(25038)
+			else
+				super(25038, data)
+			end
+		end
+	end
+
 	class IOIID < Quickfix::StringField
 		def IOIID.field
 			return 23
@@ -9420,6 +10239,19 @@ module Quickfix
 				super(684)
 			else
 				super(684, data)
+			end
+		end
+	end
+
+	class LegOrderQty < Quickfix::DoubleField
+		def LegOrderQty.field
+			return 685
+		end
+		def initialize(data = nil)
+			if( data == nil )
+				super(685)
+			else
+				super(685, data)
 			end
 		end
 	end
@@ -11023,19 +11855,6 @@ module Quickfix
 		end
 	end
 
-	class PriceDelta < Quickfix::DoubleField
-		def PriceDelta.field
-			return 811
-		end
-		def initialize(data = nil)
-			if( data == nil )
-				super(811)
-			else
-				super(811, data)
-			end
-		end
-	end
-
 	class ApplQueueMax < Quickfix::IntField
 		def ApplQueueMax.field
 			return 812
@@ -11474,19 +12293,6 @@ module Quickfix
 				super(846)
 			else
 				super(846, data)
-			end
-		end
-	end
-
-	class TargetStrategy < Quickfix::IntField
-		def TargetStrategy.field
-			return 847
-		end
-		def initialize(data = nil)
-			if( data == nil )
-				super(847)
-			else
-				super(847, data)
 			end
 		end
 	end
@@ -12072,19 +12878,6 @@ module Quickfix
 				super(892)
 			else
 				super(892, data)
-			end
-		end
-	end
-
-	class LastFragment < Quickfix::BoolField
-		def LastFragment.field
-			return 893
-		end
-		def initialize(data = nil)
-			if( data == nil )
-				super(893)
-			else
-				super(893, data)
 			end
 		end
 	end
@@ -12895,19 +13688,6 @@ module Quickfix
 		end
 	end
 
-	class LegOrderQty < Quickfix::DoubleField
-		def LegOrderQty.field
-			return 685
-		end
-		def initialize(data = nil)
-			if( data == nil )
-				super(685)
-			else
-				super(685, data)
-			end
-		end
-	end
-
 	class NoStrategyParameters < Quickfix::IntField
 		def NoStrategyParameters.field
 			return 957
@@ -13060,19 +13840,6 @@ module Quickfix
 				super(968)
 			else
 				super(968, data)
-			end
-		end
-	end
-
-	class MinPriceIncrement < Quickfix::DoubleField
-		def MinPriceIncrement.field
-			return 969
-		end
-		def initialize(data = nil)
-			if( data == nil )
-				super(969)
-			else
-				super(969, data)
 			end
 		end
 	end
@@ -13489,19 +14256,6 @@ module Quickfix
 				super(1002)
 			else
 				super(1002, data)
-			end
-		end
-	end
-
-	class TradeID < Quickfix::StringField
-		def TradeID.field
-			return 1003
-		end
-		def initialize(data = nil)
-			if( data == nil )
-				super(1003)
-			else
-				super(1003, data)
 			end
 		end
 	end
@@ -14169,19 +14923,6 @@ module Quickfix
 		end
 	end
 
-	class AggressorIndicator < Quickfix::BoolField
-		def AggressorIndicator.field
-			return 1057
-		end
-		def initialize(data = nil)
-			if( data == nil )
-				super(1057)
-			else
-				super(1057, data)
-			end
-		end
-	end
-
 	class NoUndlyInstrumentParties < Quickfix::IntField
 		def NoUndlyInstrumentParties.field
 			return 1058
@@ -14689,45 +15430,6 @@ module Quickfix
 		end
 	end
 
-	class TriggerType < Quickfix::CharField
-		def TriggerType.field
-			return 1100
-		end
-		def initialize(data = nil)
-			if( data == nil )
-				super(1100)
-			else
-				super(1100, data)
-			end
-		end
-	end
-
-	class TriggerAction < Quickfix::CharField
-		def TriggerAction.field
-			return 1101
-		end
-		def initialize(data = nil)
-			if( data == nil )
-				super(1101)
-			else
-				super(1101, data)
-			end
-		end
-	end
-
-	class TriggerPrice < Quickfix::DoubleField
-		def TriggerPrice.field
-			return 1102
-		end
-		def initialize(data = nil)
-			if( data == nil )
-				super(1102)
-			else
-				super(1102, data)
-			end
-		end
-	end
-
 	class TriggerSymbol < Quickfix::StringField
 		def TriggerSymbol.field
 			return 1103
@@ -14780,19 +15482,6 @@ module Quickfix
 		end
 	end
 
-	class TriggerPriceType < Quickfix::CharField
-		def TriggerPriceType.field
-			return 1107
-		end
-		def initialize(data = nil)
-			if( data == nil )
-				super(1107)
-			else
-				super(1107, data)
-			end
-		end
-	end
-
 	class TriggerPriceTypeScope < Quickfix::CharField
 		def TriggerPriceTypeScope.field
 			return 1108
@@ -14802,19 +15491,6 @@ module Quickfix
 				super(1108)
 			else
 				super(1108, data)
-			end
-		end
-	end
-
-	class TriggerPriceDirection < Quickfix::CharField
-		def TriggerPriceDirection.field
-			return 1109
-		end
-		def initialize(data = nil)
-			if( data == nil )
-				super(1109)
-			else
-				super(1109, data)
 			end
 		end
 	end
@@ -15218,19 +15894,6 @@ module Quickfix
 				super(1212)
 			else
 				super(1212, data)
-			end
-		end
-	end
-
-	class MaxTradeVol < Quickfix::DoubleField
-		def MaxTradeVol.field
-			return 1140
-		end
-		def initialize(data = nil)
-			if( data == nil )
-				super(1140)
-			else
-				super(1140, data)
 			end
 		end
 	end
@@ -18377,32 +19040,6 @@ module Quickfix
 				super(1384)
 			else
 				super(1384, data)
-			end
-		end
-	end
-
-	class ContingencyType < Quickfix::IntField
-		def ContingencyType.field
-			return 1385
-		end
-		def initialize(data = nil)
-			if( data == nil )
-				super(1385)
-			else
-				super(1385, data)
-			end
-		end
-	end
-
-	class ListRejectReason < Quickfix::IntField
-		def ListRejectReason.field
-			return 1386
-		end
-		def initialize(data = nil)
-			if( data == nil )
-				super(1386)
-			else
-				super(1386, data)
 			end
 		end
 	end
@@ -60653,19 +61290,6 @@ module Quickfix
 				super(2445)
 			else
 				super(2445, data)
-			end
-		end
-	end
-
-	class AggressorSide < Quickfix::CharField
-		def AggressorSide.field
-			return 2446
-		end
-		def initialize(data = nil)
-			if( data == nil )
-				super(2446)
-			else
-				super(2446, data)
 			end
 		end
 	end

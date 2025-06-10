@@ -18,20 +18,12 @@ namespace FIX44
     Reject& operator=(Reject&&) = default;
     static FIX::MsgType MsgType() { return FIX::MsgType("3"); }
 
-    Reject(
-      const FIX::RefSeqNum& aRefSeqNum )
-    : Message(MsgType())
-    {
-      set(aRefSeqNum);
-    }
-
     FIELD_SET(*this, FIX::RefSeqNum);
     FIELD_SET(*this, FIX::RefTagID);
     FIELD_SET(*this, FIX::RefMsgType);
     FIELD_SET(*this, FIX::SessionRejectReason);
+    FIELD_SET(*this, FIX::ErrorCode);
     FIELD_SET(*this, FIX::Text);
-    FIELD_SET(*this, FIX::EncodedTextLen);
-    FIELD_SET(*this, FIX::EncodedText);
   };
 
 }
